@@ -4,18 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-      //  Product product;
-	// write your code here
+SoftDrink softDrink = new SoftDrink();
+Chocolate chocolate = new Chocolate();
+SaltySnack saltySnack = new SaltySnack();
+Product product = new Product();
+OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine(50,60,100);
 
-       // Chocolate chocolate = new Chocolate();
-       // System.out.println(chocolate.description());
-        OverloadedVendingMachine spaza = new OverloadedVendingMachine(50,50,100);
-          Product product = new Product();
-        SaltySnack saltySnack = new SaltySnack();
-        product.buy(new SaltySnack());
-
-        System.out.println(product.getStock());
-        System.out.println(product.getStock());
+overloadedVendingMachine.buy(product);
+overloadedVendingMachine.getStock();
+overloadedVendingMachine.addStock(product);
 
     }
 }

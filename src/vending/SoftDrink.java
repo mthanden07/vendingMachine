@@ -7,17 +7,5 @@ public class SoftDrink extends Product {
     }
 
 
-    public void addStock(SoftDrink softDrink) {
-        softDrinkQty++;
-    }
-
-    public void buy(SoftDrink softDrink) {
-        softDrinkQty--;
-        System.out.println("You have bought each of the 1 Soft Drink ");
-    }
-
-    public int getStock(SoftDrink softDrink) {
-        return  softDrinkQty;
-    }
 
 }

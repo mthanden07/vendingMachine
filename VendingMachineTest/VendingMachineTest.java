@@ -14,21 +14,17 @@ public class VendingMachineTest{
         coke.description();
         assertEquals("This is a SoftDrink", coke.description());
 
+
     }
+    /*
 @Test
     public void overloadingShould(){
-
-        
-        
-        
-        
-        ''
     SaltySnack saltySnack = new SaltySnack();
 
 
 
 }
-
+*/
 
 
 }

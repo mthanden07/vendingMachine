@@ -7,8 +7,11 @@ public class OverloadedVendingMachine {
     public int chocolateQty = 0;
 
 
-    //  start add();====================================>
+
+    //  <===========================...loadingAdd();  ====================================>
+
     public void addStock(Product product) {
+        
         this.softDrinkQty++;
         this.chocolateQty++;
         this.saltySnackQty++;
@@ -29,9 +32,13 @@ public class OverloadedVendingMachine {
         softDrinkQty++;
         System.out.println("You have added 1 Soft Drink.");
     }
-// ...end of add();========================================>
 
-    // start buy()..===================>
+//    <==================================...addComplete(); ========================================>
+
+
+    // <=================================...loadingBuy(); ========================================>
+
+
     public void buy(Product product) {
         this.softDrinkQty--;
         this.chocolateQty--;
@@ -54,11 +61,16 @@ public class OverloadedVendingMachine {
     public void buy(SoftDrink softDrink) {
         softDrinkQty--;
         System.out.println("You have bought 1 Soft Drink ");
+
     }
-    //...end buy();============================================>
+
+    //<===================...buyComplete();  ============================================>
 
 
-    //start get();=============================>
+    //<==========================...loadingGet();  =======================================>
+
+
+
     public void getStock(SoftDrink softDrink) {
         System.out.println("You have  " + softDrinkQty + "  Soft Drink left.");
     }
@@ -75,12 +87,21 @@ public class OverloadedVendingMachine {
         System.out.println("You have  " + this.softDrinkQty + " Soft Drink left.");
         System.out.println("You have  " + this.saltySnackQty + " Salty Snack left.");
         System.out.println("You have  " + this.chocolateQty + " Chocolate left.");
+
     }
-//...end get();=================================================================>
 
 
 
-    // start buyBulk();==================================>
+
+
+//   <=============================...getComplete();  ===================================================>
+
+
+    //<=============================...loadingBuyBulk();  ===============================================>
+
+
+
+
     public void buyBulk(int more, SaltySnack saltySnack) {
         saltySnackQty -= more;
         System.out.println("You have bought " + more + " Salty Snacks.");
@@ -105,10 +126,12 @@ public class OverloadedVendingMachine {
         System.out.println("You have bought " + soft + " Soft Drinks.");
         System.out.println("You have bought " + choco + " Chocolate.");
     }
-    // ...end buyBulk();=====================================================>
+    // ...<======================= ...buyBulkComplete();   ===========================================>
 
 
-    // start addBulk();==================================>
+    // ...<======================...loadingAddBulk();  ======================================>
+
+
     public void addBulk(int more, SaltySnack saltySnack) {
         saltySnackQty += more;
         System.out.println("You have added " + more + " Salty Snacks.");
@@ -133,9 +156,11 @@ public class OverloadedVendingMachine {
         System.out.println("You have added " + soft + " Soft Drinks.");
         System.out.println("You have adede " + choco + " Chocolate.");
     }
-    //...end addBulk();====================================================>
+    //<================================...addBulkComplete();  ====================================================>
 
-    // constructor.==========================================================================>
+    // <================================...loadingConstructor(); ===============================================>
+
+
     public OverloadedVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolatesQty) {
         // set the stockLevel instance variables for each product in the constructor
 
@@ -145,6 +170,6 @@ public class OverloadedVendingMachine {
             this.saltySnackQty = saltySnackQty;
 
 
-        // ...end constructor.===============================================================>
+        // <===============================...constructorComplete();==========================================>
     }
 }

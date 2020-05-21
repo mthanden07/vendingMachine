@@ -5,9 +5,4 @@ public class SaltySnack extends Product {
         return "This is a SaltySnack";
     }
 
-
-
-
-
-
 }

@@ -1,4 +1,8 @@
+
 package vending;
+//
+// import  java.lang.util.*;
+//import org.w3c.dom.ls.LSOutput;
 
 public class OverloadedVendingMachine {
 
@@ -11,16 +15,21 @@ public class OverloadedVendingMachine {
     //  <===========================...loadingAdd();  ====================================>
 
     public void addStock(Product product) {
-        
-        this.softDrinkQty++;
-        this.chocolateQty++;
-        this.saltySnackQty++;
-        System.out.println("You have added 3 of each products.");
-    }
+     //   if(softDrinkQty>=0 && softDrinkQty < 0) {
+
+            this.softDrinkQty++;
+            this.chocolateQty++;
+            this.saltySnackQty++;
+            System.out.println("You have added 3 of each products.");
+        }
+     //   else if(softDrinkQty<0){System.out.println("No more stock");}
+ //   }
 
     public void addStock(Chocolate chocolate) {
-        chocolateQty++;
+     //   if(chocolateQty>=0)
+            chocolateQty++;
         System.out.println("You have added 1 Chocolate.");
+
     }
 
     public void addStock(SaltySnack saltySnack) {
@@ -33,11 +42,11 @@ public class OverloadedVendingMachine {
         System.out.println("You have added 1 Soft Drink.");
     }
 
-//    <==================================...addComplete(); ========================================>
+/*   <==================================...addComplete(); ========================================>
 
 
-    // <=================================...loadingBuy(); ========================================>
-
+      <=================================...loadingBuy(); ========================================>
+*/
 
     public void buy(Product product) {
         this.softDrinkQty--;
@@ -47,17 +56,20 @@ public class OverloadedVendingMachine {
     }
 
     public void buy(SaltySnack saltySnack) {
-        if (softDrinkQty >= 0 && saltySnackQty >= 0 && chocolateQty >= 0) {
+       // if (softDrinkQty >= 0 && saltySnackQty >= 0 && chocolateQty >= 0) {
             saltySnackQty--;
             System.out.println("You have bought 1 Salty Snack. ");
-        }
+    //    }
     }
 
     public void buy(Chocolate chocolate) {
-        chocolateQty--;
-        System.out.println("You have bought each of the 1 Chocolate ");
-    }
+      //  if (softDrinkQty > 0 && saltySnackQty > 0 && chocolateQty > 0) {
+            chocolateQty--;
+            System.out.println("You have bought each of the 1 Chocolate ");
 
+              }
+        //else if(softDrinkQty<=0){System.out.println("No more stock");}
+    //}
     public void buy(SoftDrink softDrink) {
         softDrinkQty--;
         System.out.println("You have bought 1 Soft Drink ");
@@ -84,10 +96,9 @@ public class OverloadedVendingMachine {
     }
 
     public void getStock() {
-        System.out.println("You have  " + this.softDrinkQty + " Soft Drink left.");
         System.out.println("You have  " + this.saltySnackQty + " Salty Snack left.");
         System.out.println("You have  " + this.chocolateQty + " Chocolate left.");
-
+        System.out.println("You have  " + this.softDrinkQty + " Soft Drinks left.");
     }
 
 
@@ -154,20 +165,26 @@ public class OverloadedVendingMachine {
 
         System.out.println("You have added " + salty + " Salty Snacks.");
         System.out.println("You have added " + soft + " Soft Drinks.");
-        System.out.println("You have adede " + choco + " Chocolate.");
+        System.out.println("You have added " + choco + " Chocolate.");
     }
     //<================================...addBulkComplete();  ====================================================>
 
     // <================================...loadingConstructor(); ===============================================>
 
 
-    public OverloadedVendingMachine(int softDrinkQty, int saltySnacksQty, int chocolatesQty) {
+    public OverloadedVendingMachine(int softDrinkQty, int saltySnackQty, int chocolateQty) {
         // set the stockLevel instance variables for each product in the constructor
-
+        if(this.saltySnackQty<0){
+            System.out.println("Out of stock");
+        }
 
             this.softDrinkQty = softDrinkQty; //OverloadedVendingMachine.getStock(softDrinkQty);
             this.chocolateQty = chocolateQty;
             this.saltySnackQty = saltySnackQty;
+
+
+
+
 
 
         // <===============================...constructorComplete();==========================================>

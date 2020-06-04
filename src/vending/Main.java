@@ -10,10 +10,13 @@ Chocolate chocolate = new Chocolate();
 SaltySnack saltySnack = new SaltySnack();
 Product product = new Product();
 
-OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine(50,60,100);
+OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine(3,0,2);
 
-overloadedVendingMachine.addBulk(20,softDrink);
-overloadedVendingMachine.getStock();
+
+
+        overloadedVendingMachine.buy(saltySnack);
+        overloadedVendingMachine.getStock(saltySnack);
+
 
     }
 }

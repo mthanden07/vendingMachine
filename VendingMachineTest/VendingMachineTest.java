@@ -71,4 +71,11 @@ public class VendingMachineTest{
         assertEquals(4, overloadedVendingMachine.softDrinkQty);
     }
 */
+@Test
+public void shouldnotNegativeStock(){
+   // SaltySnack saltySnack = new SaltySnack();
+    OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine(10,10,10);
+overloadedVendingMachine.buy(chocolate);
+    assertEquals(9 , overloadedVendingMachine.chocolateQty);
+ }
 }

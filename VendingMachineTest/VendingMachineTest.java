@@ -56,7 +56,7 @@ public class VendingMachineTest{
         assertEquals(11, overloadedVendingMachine.chocolateQty);
         assertEquals(10, overloadedVendingMachine.softDrinkQty);
     }
-/*
+
     @Test
     public void shouldbuyBulkStock(){//underConstruction
         SaltySnack saltySnack = new SaltySnack();
@@ -70,12 +70,11 @@ public class VendingMachineTest{
         assertEquals(0, overloadedVendingMachine.chocolateQty);
         assertEquals(4, overloadedVendingMachine.softDrinkQty);
     }
-*/
 @Test
 public void shouldnotNegativeStock(){
    // SaltySnack saltySnack = new SaltySnack();
-    OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine(10,10,10);
-overloadedVendingMachine.buy(chocolate);
-    assertEquals(9 , overloadedVendingMachine.chocolateQty);
+    OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine(10,10,-1);
+        overloadedVendingMachine.buy(chocolate);
+    assertEquals(0 , overloadedVendingMachine.chocolateQty);
  }
 }

@@ -4,7 +4,7 @@ import vending.Product;
 public class Main {
 
     public static void main(String[] args) {
-
+/*
 SoftDrink softDrink = new SoftDrink();
 Chocolate chocolate = new Chocolate();
 SaltySnack saltySnack = new SaltySnack();
@@ -16,7 +16,7 @@ OverloadedVendingMachine overloadedVendingMachine = new OverloadedVendingMachine
 
         overloadedVendingMachine.buy(saltySnack);
         overloadedVendingMachine.getStock(saltySnack);
-
+*/
 
     }
 }

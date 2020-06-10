@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf083522-66c0-4aae-afe6-d84d37b7ddea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtendableVendingMachineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../VendingMachineTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../out/test/VendingMachine/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../out/test/VendingMachine/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../out/test/VendingMachine/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../out/test/VendingMachine/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../out/test/VendingMachine/VendingMachineTest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../src/extendableVendingMachine/ChocolateMuffin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../src/extendableVendingMachine/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../VendingMachine.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../VendingMachine.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../VendingMachineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/production/VendingMachine/vending/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/VendingMachine/vending/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/production/VendingMachine/vending/OverloadedVendingMachine.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/production/VendingMachine/vending/OverloadedVendingMachine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../out/test/VendingMachine/VendingMachineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../out/test/VendingMachine/VendingMachineTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/extendableVendingMachine/ExtendableVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/extendableVendingMachine/ExtendableVendingMachine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/vending/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/vending/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../src/vending/OverloadedVendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/vending/OverloadedVendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
